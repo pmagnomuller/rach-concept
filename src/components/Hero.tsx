@@ -22,7 +22,24 @@ export default function Hero() {
       <div className="pointer-events-none absolute left-1/3 top-1/4 h-4 w-4 rounded-full bg-accent/50 blur-[1px]" />
       <div className="pointer-events-none absolute right-1/4 bottom-1/3 h-3 w-3 rounded-full bg-accent/40" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col-reverse items-center gap-12 px-6 pb-20 pt-28 lg:flex-row lg:gap-20 lg:pb-24 lg:pt-32">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col-reverse items-center gap-12 px-6 pb-20 pt-28 lg:flex-row-reverse lg:gap-20 lg:pb-24 lg:pt-32">
+        {/* Hero image column */}
+        <div className="relative w-full lg:w-1/2">
+          <div className="pointer-events-none absolute -inset-8 -z-10 rounded-[46px] border border-foreground/5" />
+          <div className="pointer-events-none absolute -bottom-10 left-10 h-24 w-24 rounded-full bg-accent/15 blur-3xl" />
+
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[40px] bg-foreground/5 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
+            <Image
+              src={heroImage}
+              alt="Close-up of a RachConcept belt styled with a silk top"
+              fill
+              priority
+              sizes="(min-width: 1024px) 640px, 92vw"
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
+
         {/* Text / brand column */}
         <div className="w-full text-center lg:w-1/2 lg:text-left">
           <div className="mb-10 inline-flex items-center justify-center rounded-full border border-foreground/10 bg-background/60 px-4 py-1 text-xs uppercase tracking-[0.25em] text-muted-foreground backdrop-blur-sm lg:justify-start">
@@ -59,23 +76,6 @@ export default function Hero() {
             <span className="text-xs text-muted-foreground md:text-sm">
               Hand-finished belts, made in Portugal.
             </span>
-          </div>
-        </div>
-
-        {/* Hero image column */}
-        <div className="relative w-full lg:w-1/2">
-          <div className="pointer-events-none absolute -inset-8 -z-10 rounded-[46px] border border-foreground/5" />
-          <div className="pointer-events-none absolute -bottom-10 left-10 h-24 w-24 rounded-full bg-accent/15 blur-3xl" />
-
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[40px] bg-foreground/5 shadow-[0_40px_120px_rgba(0,0,0,0.45)]">
-            <Image
-              src={heroImage}
-              alt="Close-up of a RachConcept belt styled with a silk top"
-              fill
-              priority
-              sizes="(min-width: 1024px) 640px, 92vw"
-              className="object-cover object-center"
-            />
           </div>
         </div>
       </div>

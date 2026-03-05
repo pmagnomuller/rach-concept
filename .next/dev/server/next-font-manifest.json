@@ -1,13 +1,5 @@
 {
   "app": {
-    "[project]/src/app/belt/[id]/page": [
-      "static/media/01e4147cff8141ee-s.p.7787e134.woff2",
-      "static/media/c825fd02acae0153-s.p.1692d83b.woff2"
-    ],
-    "[project]/src/app/catalogue/page": [
-      "static/media/01e4147cff8141ee-s.p.7787e134.woff2",
-      "static/media/c825fd02acae0153-s.p.1692d83b.woff2"
-    ],
     "[project]/src/app/page": [
       "static/media/01e4147cff8141ee-s.p.7787e134.woff2",
       "static/media/c825fd02acae0153-s.p.1692d83b.woff2"

@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/belt/heritage-trio":{},"/belt/amber-trail":{},"/belt/saddle-vintage":{},"/belt/noir-eclipse":{},"/belt/terra-rustica":{},"/belt/desert-ember":{},"/belt/mahogany-crest":{},"/belt/copper-sands":{},"/belt/midnight-halo":{},"/belt/brass-orbit":{},"/belt/onyx-ridge":{},"/belt/sandstone-loop":{},"/belt/caramel-boulevard":{},"/belt/chestnut-parade":{},"/belt/burnt-sienna-line":{},"/belt/graphite-edge":{},"/belt/golden-dusk":{},"/belt/espresso-royale":{}},"dynamicRoutes":{"/belt/[id]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/belt/[id]","routeRegex":"^\\/belt\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"10b514ea5efae29c770078e5de7ab773","previewModeSigningKey":"0b9aceb818be500bf1d1b4fa185034dda0516df53d6ae5998cd43cb381f21860","previewModeEncryptionKey":"4a41b92e799635e61c2aae69334b4da37537b0ce0d648b713dbd15a3415c6e9f"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "471123683614c9ed77132b00d157db4e",
+    "previewModeSigningKey": "b9e57c99b39549b8fc91830794de5633068a1765ed608355b04efc15ae4c3def",
+    "previewModeEncryptionKey": "dc3ef3096f16f9b6a3b0349e73a414de8909ee5d0206119f06f4ce0093ce3521"
+  }
+}
