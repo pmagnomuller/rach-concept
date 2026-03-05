@@ -1,23 +1,18 @@
-[00:00:00.554] Server  LOG     ✓ Ready in 410ms
-[00:00:12.462] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:27.134] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:00:33.741] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:50.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:22.334] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:08:35.585] Server  LOG     ✓ Compiled in 427ms
-[00:08:36.401] Server  LOG     ✓ Compiled in 10ms
-[00:08:49.586] Server  LOG     ✓ Compiled in 21ms
-[00:08:50.868] Server  LOG     ✓ Compiled in 11ms
-[00:08:55.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:08.362] Server  LOG     ✓ Compiled in 0ms
-[00:12:08.444] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:44.953] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:46.523] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:47.366] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:24.836] Server  LOG     ✓ Compiled in 31ms
-[00:15:24.966] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:30.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:39.206] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:42.048] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:19:30.327] Server  LOG     ✓ Compiled in 8ms
-[00:19:54.174] Server  LOG     ✓ Compiled in 8ms
+[00:00:00.657] Server  LOG     ✓ Ready in 480ms
+[00:00:02.007] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.121] Browser WARN    Image with src "/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:05.917] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:03:47.368] Server  LOG     ✓ Compiled in 58ms
+[00:04:45.114] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:45.269] Browser WARN    Image with src "/logo.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:04:46.550] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:05:04.863] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:05:21.524] Browser WARN    Image with src "/produto17.jpeg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:05:37.419] Browser WARN    Image with src "/produto4.jpeg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:06:52.858] Browser WARN    Image with src "/produto15.jpeg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:06:54.869] Server  LOG     ✓ Compiled in 45ms
+[00:07:59.428] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:08:47.877] Server  LOG     ✓ Compiled in 47ms
+[00:09:09.539] Browser WARN    Image with src "/produto1.jpeg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.

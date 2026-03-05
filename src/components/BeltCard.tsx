@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Belt } from "@/data/belts";
 
 interface BeltCardProps {
@@ -12,23 +13,21 @@ export default function BeltCard({ belt }: BeltCardProps) {
       className="group block"
     >
       <article className="relative overflow-hidden">
-        {/* Belt Image Placeholder */}
-        <div 
-          className="aspect-[3/4] w-full relative overflow-hidden bg-gradient-to-br"
-          style={{
-            background: belt.gradient,
-          }}
+        {/* Belt Image */}
+        <div
+          className="aspect-[3/4] w-full relative overflow-hidden rounded-sm border border-foreground/20"
+          style={{ background: belt.gradient }}
         >
+          <Image
+            src={belt.image}
+            alt={belt.name}
+            fill
+            sizes="(min-width: 1024px) 320px, (min-width: 768px) 40vw, 80vw"
+            className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+
           {/* Hover Overlay */}
           <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-all duration-500" />
-          
-          {/* Belt Pattern Decoration */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-20">
-            <div 
-              className="w-4/5 h-6 rounded-full"
-              style={{ background: belt.accentColor }}
-            />
-          </div>
 
           {/* Quick View Text */}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

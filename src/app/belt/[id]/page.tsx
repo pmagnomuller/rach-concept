@@ -1,5 +1,6 @@
 import { getBeltById, getAllBeltIds } from "@/data/belts";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -64,20 +65,20 @@ export default async function BeltPage({ params }: BeltPageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Product Image */}
           <div className="relative">
-            <div 
-              className="aspect-[4/5] w-full rounded-sm overflow-hidden"
+            <div
+              className="aspect-[4/5] w-full rounded-sm overflow-hidden bg-foreground/[0.02]"
               style={{ background: belt.gradient }}
             >
-              {/* Belt Pattern Decoration */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div 
-                  className="w-3/4 h-8 rounded-full opacity-30"
-                  style={{ background: belt.accentColor }}
-                />
-              </div>
+              <Image
+                src={belt.image}
+                alt={belt.name}
+                fill
+                sizes="(min-width: 1024px) 520px, 90vw"
+                className="object-cover object-center"
+              />
 
               {/* Decorative Frame */}
-              <div className="absolute inset-6 border border-white/20 rounded-sm" />
+              <div className="pointer-events-none absolute inset-6 border border-white/40 rounded-sm mix-blend-soft-light" />
             </div>
           </div>
 
@@ -110,6 +111,25 @@ export default async function BeltPage({ params }: BeltPageProps) {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* More Details / Instagram */}
+            <div className="mb-10">
+              <h3 className="text-sm tracking-[0.2em] uppercase text-foreground mb-3">
+                More details
+              </h3>
+              <p className="text-muted text-sm leading-relaxed">
+                For additional product information, styling inspiration, and the latest releases, visit our{" "}
+                <a
+                  href="https://www.instagram.com/rachconcept.store/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 decoration-accent hover:text-accent"
+                >
+                  Instagram
+                </a>
+                .
+              </p>
             </div>
 
             {/* Back to Collection */}

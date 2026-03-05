@@ -6,92 +6,297 @@ export interface Belt {
   details: string[];
   gradient: string;
   accentColor: string;
+  image: string;
 }
 
 export const belts: Belt[] = [
   {
-    id: "tuscan-sunset",
-    name: "Tuscan Sunset",
-    description: "Inspired by the warm hues of Italian evenings, this belt combines rich cognac leather with subtle golden undertones. A timeless piece that transitions effortlessly from day to night.",
-    material: "Italian Full-Grain Leather",
+    id: "heritage-trio",
+    name: "Heritage Trio",
+    description:
+      "A celebration of classic Western-inspired hardware, this statement belt pairs sculpted metalwork with rich leather tones for a timeless, collectible piece.",
+    material: "Full-Grain Leather",
     details: [
-      "Hand-stitched edges",
-      "Antique brass buckle",
-      "Width: 3.5 cm",
-      "Made in small batches"
+      "Hand-polished antique gold buckle set",
+      "Three-tone leather palette",
+      "Width: 3.2 cm",
+      "Designed in Brazil",
     ],
-    gradient: "linear-gradient(135deg, #D4A574 0%, #8B5A2B 50%, #5D3A1A 100%)",
-    accentColor: "#C9A962",
+    gradient: "linear-gradient(135deg, #C79A63 0%, #8A5A35 50%, #3A2414 100%)",
+    accentColor: "#D9B26A",
+    image: "/produto1.jpeg",
   },
   {
-    id: "midnight-noir",
-    name: "Midnight Noir",
-    description: "Sleek and sophisticated, the Midnight Noir is crafted from premium black leather with a subtle matte finish. Perfect for those who appreciate understated elegance.",
-    material: "Premium Calfskin",
-    details: [
-      "Minimalist design",
-      "Matte black buckle",
-      "Width: 3 cm",
-      "Vegetable-tanned"
-    ],
-    gradient: "linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 50%, #0D0D0D 100%)",
-    accentColor: "#4A4A4A",
-  },
-  {
-    id: "sahara-dream",
-    name: "Sahara Dream",
-    description: "Capturing the essence of desert landscapes, this belt features warm sand tones with artisanal texturing. A statement piece that tells a story.",
-    material: "Nubuck Leather",
-    details: [
-      "Textured finish",
-      "Brushed gold hardware",
-      "Width: 4 cm",
-      "Hand-burnished edges"
-    ],
-    gradient: "linear-gradient(135deg, #E8D4B8 0%, #C4A77D 50%, #8B7355 100%)",
-    accentColor: "#D4AF37",
-  },
-  {
-    id: "bordeaux-classic",
-    name: "Bordeaux Classic",
-    description: "Rich burgundy tones reminiscent of fine wine, this belt adds a touch of refined luxury to any ensemble. Deep, complex, and utterly sophisticated.",
+    id: "amber-trail",
+    name: "Amber Trail",
+    description:
+      "Warm amber leather with subtle texture and sculpted buckle detailing, ideal for elevating denim or cinching a fluid dress.",
     material: "Vegetable-Tanned Leather",
     details: [
-      "Deep wine color",
-      "Silver-toned buckle",
+      "Hand-burnished finish",
+      "Brass-finished buckle and keeper",
       "Width: 3.5 cm",
-      "Ages beautifully"
+      "Ages with a unique patina",
     ],
-    gradient: "linear-gradient(135deg, #722F37 0%, #5C1A1B 50%, #3D0C0E 100%)",
-    accentColor: "#8B0000",
+    gradient: "linear-gradient(135deg, #E1A057 0%, #BC7332 50%, #6C3B1A 100%)",
+    accentColor: "#E9B26C",
+    image: "/produto2.jpeg",
   },
   {
-    id: "olive-grove",
-    name: "Olive Grove",
-    description: "Inspired by Mediterranean landscapes, this belt features deep olive tones with natural variations. Earthy, organic, and distinctly contemporary.",
+    id: "saddle-vintage",
+    name: "Saddle Vintage",
+    description:
+      "Inspired by heritage saddlery, this belt features a deep saddle-brown tone with vintage metal accents for everyday luxury.",
+    material: "Italian Full-Grain Leather",
+    details: [
+      "Contrast topstitching",
+      "Vintage brass buckle",
+      "Width: 3.8 cm",
+      "Hand-cut and edge-painted",
+    ],
+    gradient: "linear-gradient(135deg, #A5663A 0%, #7A4323 50%, #3E2213 100%)",
+    accentColor: "#C88A54",
+    image: "/produto3.jpeg",
+  },
+  {
+    id: "noir-eclipse",
+    name: "Noir Eclipse",
+    description:
+      "A sleek midnight-black belt with dramatic metalwork that adds instant edge to tailored and casual looks alike.",
+    material: "Premium Calfskin",
+    details: [
+      "Matte black leather finish",
+      "Sculpted gunmetal buckle",
+      "Width: 3 cm",
+      "Smooth, flexible hand-feel",
+    ],
+    gradient: "linear-gradient(135deg, #2B2B2B 0%, #141414 50%, #050505 100%)",
+    accentColor: "#555555",
+    image: "/produto4.jpeg",
+  },
+  {
+    id: "terra-rustica",
+    name: "Terra Rustica",
+    description:
+      "Earthy, sun-warmed brown leather with artisanal buckle engraving that nods to handcrafted traditions.",
     material: "Waxed Leather",
     details: [
-      "Natural color variations",
-      "Antique bronze buckle",
-      "Width: 3 cm",
-      "Weather-resistant finish"
+      "Lightly distressed texture",
+      "Etched brass-tone buckle",
+      "Width: 3.4 cm",
+      "Water-resistant waxed finish",
     ],
-    gradient: "linear-gradient(135deg, #6B7B3C 0%, #4A5628 50%, #2F3816 100%)",
-    accentColor: "#8B8B00",
+    gradient: "linear-gradient(135deg, #B2734A 0%, #8B4B2A 50%, #4A2414 100%)",
+    accentColor: "#E09B62",
+    image: "/produto5.jpeg",
   },
   {
-    id: "arctic-frost",
-    name: "Arctic Frost",
-    description: "A modern interpretation of classic white, featuring pearlescent undertones and impeccable craftsmanship. Bold, fresh, and undeniably chic.",
-    material: "Patent Leather",
+    id: "desert-ember",
+    name: "Desert Ember",
+    description:
+      "A glowing burnt-orange belt that recalls desert sunsets, finished with bold metallic details for a modern statement.",
+    material: "Top-Grain Leather",
     details: [
-      "Pearlescent finish",
-      "Chrome buckle",
-      "Width: 2.5 cm",
-      "Statement piece"
+      "Smooth waxed surface",
+      "Brushed gold buckle",
+      "Width: 3.2 cm",
+      "Colorfast dyed through the hide",
     ],
-    gradient: "linear-gradient(135deg, #FFFFFF 0%, #F5F5F5 30%, #E8E8E8 70%, #D3D3D3 100%)",
-    accentColor: "#C0C0C0",
+    gradient: "linear-gradient(135deg, #F48C4A 0%, #D26631 50%, #7C3515 100%)",
+    accentColor: "#FFB27A",
+    image: "/produto6.jpeg",
+  },
+  {
+    id: "mahogany-crest",
+    name: "Mahogany Crest",
+    description:
+      "Deep mahogany tones and crest-inspired buckle engraving come together in a belt designed for elevated everyday wear.",
+    material: "Vegetable-Tanned Leather",
+    details: [
+      "Rich, multi-tone color depth",
+      "Signature engraved buckle",
+      "Width: 3.5 cm",
+      "Edges burnished by hand",
+    ],
+    gradient: "linear-gradient(135deg, #7F3B30 0%, #5B221C 50%, #321112 100%)",
+    accentColor: "#C06855",
+    image: "/produto7.jpeg",
+  },
+  {
+    id: "copper-sands",
+    name: "Copper Sands",
+    description:
+      "Soft copper-brown leather with a gentle sheen, perfect for adding warmth to monochrome or neutral outfits.",
+    material: "Nubuck Leather",
+    details: [
+      "Powdery, velvety surface",
+      "Light antique brass buckle",
+      "Width: 3.8 cm",
+      "Comfortable, flexible structure",
+    ],
+    gradient: "linear-gradient(135deg, #C8875A 0%, #A0633F 50%, #5A2F1B 100%)",
+    accentColor: "#F1B181",
+    image: "/produto8.jpeg",
+  },
+  {
+    id: "midnight-halo",
+    name: "Midnight Halo",
+    description:
+      "An inky black belt framed by luminous metalwork, ideal for sharp tailoring and minimalist silhouettes.",
+    material: "Smooth Calf Leather",
+    details: [
+      "High-contrast metal hardware",
+      "Sleek, untextured strap",
+      "Width: 3 cm",
+      "Subtle tonal edge painting",
+    ],
+    gradient: "linear-gradient(135deg, #232323 0%, #101010 50%, #000000 100%)",
+    accentColor: "#C0B28A",
+    image: "/produto9.jpeg",
+  },
+  {
+    id: "brass-orbit",
+    name: "Brass Orbit",
+    description:
+      "A sculptural brass-tone buckle meets structured leather, creating a bold belt that anchors any look.",
+    material: "Full-Grain Leather",
+    details: [
+      "Bold central buckle silhouette",
+      "Structured strap keeps its shape",
+      "Width: 3.6 cm",
+      "Crafted in limited runs",
+    ],
+    gradient: "linear-gradient(135deg, #C4A15B 0%, #8B6C33 50%, #473619 100%)",
+    accentColor: "#E3C276",
+    image: "/produto10.jpeg",
+  },
+  {
+    id: "onyx-ridge",
+    name: "Onyx Ridge",
+    description:
+      "Textured black leather with a ridged grain and darkened buckle, designed for subtle depth and dimension.",
+    material: "Grain-Embossed Leather",
+    details: [
+      "Pronounced grain pattern",
+      "Dark nickel hardware",
+      "Width: 3.2 cm",
+      "Durable, everyday construction",
+    ],
+    gradient: "linear-gradient(135deg, #3B3B3B 0%, #202020 50%, #070707 100%)",
+    accentColor: "#797979",
+    image: "/produto11.jpeg",
+  },
+  {
+    id: "sandstone-loop",
+    name: "Sandstone Loop",
+    description:
+      "A soft sandstone hue with tonal stitching and gently rounded hardware, bringing an understated elegance to your wardrobe.",
+    material: "Suede-Effect Leather",
+    details: [
+      "Tonal edge stitching",
+      "Rounded, polished buckle",
+      "Width: 3.4 cm",
+      "Soft, flexible hand-feel",
+    ],
+    gradient: "linear-gradient(135deg, #E3C7A0 0%, #C79D72 50%, #8C6643 100%)",
+    accentColor: "#F1D3AC",
+    image: "/produto12.jpeg",
+  },
+  {
+    id: "caramel-boulevard",
+    name: "Caramel Boulevard",
+    description:
+      "A luminous caramel belt that pairs beautifully with denim, tailoring, and airy dresses alike.",
+    material: "Top-Grain Leather",
+    details: [
+      "Smooth, even color",
+      "Classic rectangular buckle",
+      "Width: 3.5 cm",
+      "Finished with tone-on-tone edges",
+    ],
+    gradient: "linear-gradient(135deg, #E2A768 0%, #C17E40 50%, #7A4421 100%)",
+    accentColor: "#F4BC7B",
+    image: "/produto13.jpeg",
+  },
+  {
+    id: "chestnut-parade",
+    name: "Chestnut Parade",
+    description:
+      "Rich chestnut leather accented with warm hardware for a refined yet approachable everyday belt.",
+    material: "Vegetable-Tanned Leather",
+    details: [
+      "Subtle two-tone shading",
+      "Polished brass buckle",
+      "Width: 3.7 cm",
+      "Handcrafted in small batches",
+    ],
+    gradient: "linear-gradient(135deg, #8A4B2D 0%, #65301D 50%, #321611 100%)",
+    accentColor: "#D58B5E",
+    image: "/produto14.jpeg",
+  },
+  {
+    id: "burnt-sienna-line",
+    name: "Burnt Sienna Line",
+    description:
+      "A bold burnt-sienna belt with a strong linear silhouette that instantly sharpens relaxed outfits.",
+    material: "Smooth Leather",
+    details: [
+      "Minimal topstitching",
+      "Angular metal buckle",
+      "Width: 3.5 cm",
+      "Color-stable finish",
+    ],
+    gradient: "linear-gradient(135deg, #C8683E 0%, #A04626 50%, #5A2414 100%)",
+    accentColor: "#F58A54",
+    image: "/produto15.jpeg",
+  },
+  {
+    id: "graphite-edge",
+    name: "Graphite Edge",
+    description:
+      "Dark graphite leather with crisp edges and a cool-toned buckle, designed for modern, urban styling.",
+    material: "Calfskin Leather",
+    details: [
+      "Semi-matte finish",
+      "Cool silver-tone hardware",
+      "Width: 3 cm",
+      "Precision-cut edges",
+    ],
+    gradient: "linear-gradient(135deg, #4A4A4A 0%, #292929 50%, #0F0F0F 100%)",
+    accentColor: "#B0B0B0",
+    image: "/produto16.jpeg",
+  },
+  {
+    id: "golden-dusk",
+    name: "Golden Dusk",
+    description:
+      "Soft golden-brown leather that catches the light beautifully, finished with sculpted hardware for a luxe feel.",
+    material: "Full-Grain Leather",
+    details: [
+      "Light-catching surface finish",
+      "Curved sculptural buckle",
+      "Width: 3.4 cm",
+      "Made from single leather piece",
+    ],
+    gradient: "linear-gradient(135deg, #D9A962 0%, #B57A3B 50%, #6F411D 100%)",
+    accentColor: "#F0C57F",
+    image: "/produto17.jpeg",
+  },
+  {
+    id: "espresso-royale",
+    name: "Espresso Royale",
+    description:
+      "An ultra-deep espresso belt that anchors any outfit, from sharp suiting to elevated weekend wear.",
+    material: "Vegetable-Tanned Leather",
+    details: [
+      "Intense dark-brown tone",
+      "Subtle sheen finish",
+      "Width: 3.5 cm",
+      "Built to soften with time",
+    ],
+    gradient: "linear-gradient(135deg, #3A2317 0%, #23140E 50%, #0F0705 100%)",
+    accentColor: "#8B5A3C",
+    image: "/produto18.jpeg",
   },
 ];
 

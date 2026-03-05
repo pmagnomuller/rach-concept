@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import heroImage from "../../public/hero_image.jpeg";
 
 export default function Hero() {
   return (
@@ -58,6 +59,20 @@ export default function Hero() {
         >
           View Collection
         </Link>
+
+        {/* Hero Image */}
+        <div className="mt-16 flex justify-center">
+          <div className="relative w-full max-w-xl aspect-[4/5] overflow-hidden rounded-3xl border border-foreground/10 shadow-[0_40px_80px_rgba(0,0,0,0.18)] bg-foreground/[0.02]">
+            <Image
+              src={heroImage}
+              alt="Close-up of a RachConcept belt styled with a silk top"
+              fill
+              priority
+              sizes="(min-width: 1024px) 480px, 80vw"
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Scroll Indicator */}
