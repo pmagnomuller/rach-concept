@@ -77,6 +77,9 @@ export default async function BeltPage({ params }: BeltPageProps) {
                 className="object-cover object-center"
               />
 
+              {/* Bottom overlay to strongly cover any text on the image */}
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-background via-background/90 to-transparent" />
+
               {/* Decorative Frame */}
               <div className="pointer-events-none absolute inset-6 border border-white/40 rounded-sm mix-blend-soft-light" />
             </div>

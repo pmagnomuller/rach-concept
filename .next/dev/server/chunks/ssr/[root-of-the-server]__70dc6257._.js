@@ -448,10 +448,17 @@ async function BeltPage({ params }) {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "pointer-events-none absolute inset-6 border border-white/40 rounded-sm mix-blend-soft-light"
+                                        className: "pointer-events-none absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-background via-background/90 to-transparent"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/belt/[id]/page.tsx",
                                         lineNumber: 81,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "pointer-events-none absolute inset-6 border border-white/40 rounded-sm mix-blend-soft-light"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/belt/[id]/page.tsx",
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -473,7 +480,7 @@ async function BeltPage({ params }) {
                                     children: belt.material
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -481,14 +488,14 @@ async function BeltPage({ params }) {
                                     children: belt.name
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                    lineNumber: 91,
+                                    lineNumber: 94,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "w-16 h-px bg-accent mb-8"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                    lineNumber: 95,
+                                    lineNumber: 98,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -496,7 +503,7 @@ async function BeltPage({ params }) {
                                     children: belt.description
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 100,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -507,7 +514,7 @@ async function BeltPage({ params }) {
                                             children: "Details"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                            lineNumber: 103,
+                                            lineNumber: 106,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -519,25 +526,25 @@ async function BeltPage({ params }) {
                                                             className: "w-1.5 h-1.5 bg-accent rounded-full"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                                            lineNumber: 109,
+                                                            lineNumber: 112,
                                                             columnNumber: 21
                                                         }, this),
                                                         detail
                                                     ]
                                                 }, index, true, {
                                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                                    lineNumber: 108,
+                                                    lineNumber: 111,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 109,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                    lineNumber: 102,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -548,7 +555,7 @@ async function BeltPage({ params }) {
                                             children: "More details"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                            lineNumber: 118,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -564,20 +571,20 @@ async function BeltPage({ params }) {
                                                     children: "Instagram"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                                    lineNumber: 123,
+                                                    lineNumber: 126,
                                                     columnNumber: 17
                                                 }, this),
                                                 "."
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                            lineNumber: 121,
+                                            lineNumber: 124,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                    lineNumber: 117,
+                                    lineNumber: 120,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -596,25 +603,25 @@ async function BeltPage({ params }) {
                                                 d: "M10 19l-7-7m0 0l7-7m-7 7h18"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 149,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 143,
                                             columnNumber: 15
                                         }, this),
                                         "Back to Collection"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/belt/[id]/page.tsx",
-                                    lineNumber: 136,
+                                    lineNumber: 139,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/belt/[id]/page.tsx",
-                            lineNumber: 86,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this)
                     ]

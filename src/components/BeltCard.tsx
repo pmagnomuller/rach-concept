@@ -26,6 +26,9 @@ export default function BeltCard({ belt }: BeltCardProps) {
             className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
           />
 
+          {/* Bottom overlay to strongly cover any text on the image */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background via-background/90 to-transparent" />
+
           {/* Hover Overlay */}
           <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-all duration-500" />
 
