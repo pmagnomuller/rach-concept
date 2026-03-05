@@ -1,13 +1,15 @@
 import BeltCard from "@/components/BeltCard";
-import { belts } from "@/data/belts";
 import { Metadata } from "next";
+import { getBelts } from "@/lib/sanity.queries";
 
 export const metadata: Metadata = {
   title: "Catalogue | RachConcept",
   description: "Explore our complete collection of handcrafted belts. Each piece tells a unique story of elegance and craftsmanship.",
 };
 
-export default function CataloguePage() {
+export default async function CataloguePage() {
+  const belts = await getBelts();
+
   return (
     <div className="pt-28 pb-24 px-6">
       <div className="max-w-6xl mx-auto">

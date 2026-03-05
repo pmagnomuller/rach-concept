@@ -1,8 +1,8 @@
-import { getBeltById, getAllBeltIds } from "@/data/belts";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { getAllBeltSlugs, getBeltBySlug } from "@/lib/sanity.queries";
 
 interface BeltPageProps {
   params: Promise<{ id: string }>;
@@ -10,15 +10,15 @@ interface BeltPageProps {
 
 // Generate static paths for all belts
 export async function generateStaticParams() {
-  const ids = getAllBeltIds();
+  const ids = await getAllBeltSlugs();
   return ids.map((id) => ({ id }));
 }
 
 // Generate metadata for each belt page
 export async function generateMetadata({ params }: BeltPageProps): Promise<Metadata> {
   const { id } = await params;
-  const belt = getBeltById(id);
-  
+  const belt = await getBeltBySlug(id);
+
   if (!belt) {
     return {
       title: "Belt Not Found | RachConcept",
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: BeltPageProps): Promise<Metad
 
 export default async function BeltPage({ params }: BeltPageProps) {
   const { id } = await params;
-  const belt = getBeltById(id);
+  const belt = await getBeltBySlug(id);
 
   if (!belt) {
     notFound();

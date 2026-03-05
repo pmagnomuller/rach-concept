@@ -1,15 +1,15 @@
 import Hero from "@/components/Hero";
 import BeltCard from "@/components/BeltCard";
-import { belts } from "@/data/belts";
 import Link from "next/link";
+import { getHero, getBelts } from "@/lib/sanity.queries";
 
-export default function Home() {
-  // Show first 3 belts as a preview
-  const previewBelts = belts.slice(0, 3);
+export default async function Home() {
+  const [heroContent, allBelts] = await Promise.all([getHero(), getBelts()]);
+  const previewBelts = allBelts.slice(0, 3);
 
   return (
     <>
-      <Hero />
+      <Hero content={heroContent} />
 
       {/* Collection Preview Section */}
       <section className="py-24 px-6">

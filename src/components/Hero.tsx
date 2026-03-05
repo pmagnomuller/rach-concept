@@ -1,8 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import heroImage from "../../public/hero_image_no_text.jpeg";
+import type { HeroContent } from "@/types/cms";
 
-export default function Hero() {
+interface HeroProps {
+  content: HeroContent;
+}
+
+export default function Hero({ content }: HeroProps) {
   return (
     <section className="relative min-h-screen overflow-hidden bg-background">
       {/* Soft background texture */}
@@ -43,7 +48,7 @@ export default function Hero() {
         {/* Text / brand column */}
         <div className="w-full text-center lg:w-1/2 lg:text-left">
           <div className="mb-10 inline-flex items-center justify-center rounded-full border border-foreground/10 bg-background/60 px-4 py-1 text-xs uppercase tracking-[0.25em] text-muted-foreground backdrop-blur-sm lg:justify-start">
-            Everyday looks, elevated
+            {content.badge}
           </div>
 
           <div className="mb-8">
@@ -58,23 +63,23 @@ export default function Hero() {
           </div>
 
           <p className="mb-10 font-serif text-2xl font-light italic text-foreground md:text-3xl lg:text-4xl">
-            Just add a belt<span className="text-accent">.</span>
+            {content.headline}
+            <span className="text-accent">.</span>
           </p>
 
           <p className="mx-auto mb-12 max-w-md text-sm text-muted-foreground md:text-base lg:mx-0">
-            Sculptural buckles, rich leathers, and pieces designed to sit at the
-            heart of your wardrobe—not just at your waist.
+            {content.body}
           </p>
 
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Link
-              href="/catalogue"
+              href={content.ctaHref}
               className="inline-flex items-center justify-center rounded-full bg-foreground px-10 py-3 text-xs font-medium uppercase tracking-[0.22em] text-background shadow-[0_18px_40px_rgba(0,0,0,0.35)] transition-transform transition-shadow duration-300 hover:-translate-y-0.5 hover:shadow-[0_24px_60px_rgba(0,0,0,0.45)]"
             >
-              View collection
+              {content.ctaLabel}
             </Link>
             <span className="text-xs text-muted-foreground md:text-sm">
-              Hand-finished belts, made in Portugal.
+              {content.supportingText}
             </span>
           </div>
         </div>

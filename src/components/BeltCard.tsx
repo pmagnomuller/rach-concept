@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Belt } from "@/data/belts";
+import type { BeltContent } from "@/types/cms";
 
 interface BeltCardProps {
-  belt: Belt;
+  belt: BeltContent;
 }
 
 export default function BeltCard({ belt }: BeltCardProps) {
