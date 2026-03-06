@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed:belts": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' scripts/seed-belts.ts"
   },
   "dependencies": {
     "@sanity/client": "^7.16.0",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.22.0",
+    "dotenv": "^16.4.5",
     "next": "16.1.1",
     "next-sanity": "^11.6.12",
     "react": "19.2.3",
@@ -20,6 +22,7 @@
     "styled-components": "^6.3.11"
   },
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

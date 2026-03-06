@@ -1,11 +1,6 @@
 import { groq } from "next-sanity";
 import { sanityClient } from "./sanity.client";
 import type { HeroContent, BeltContent } from "@/types/cms";
-import {
-  belts as fallbackBelts,
-  getAllBeltIds as getFallbackBeltIds,
-  getBeltById as getFallbackBeltById,
-} from "@/data/belts";
 
 const HERO_QUERY = groq`*[_type == "hero"][0]{
   badge,
@@ -24,7 +19,8 @@ const BELTS_QUERY = groq`*[_type == "belt"] | order(coalesce(sortOrder, 9999) as
   details,
   gradient,
   accentColor,
-  image
+  // Prefer Sanity image asset URL, fall back to existing imagePath string
+  "image": coalesce(image.asset->url, imagePath)
 }`;
 
 const BELT_BY_SLUG_QUERY = groq`*[_type == "belt" && slug.current == $slug][0]{
@@ -35,7 +31,7 @@ const BELT_BY_SLUG_QUERY = groq`*[_type == "belt" && slug.current == $slug][0]{
   details,
   gradient,
   accentColor,
-  image
+  "image": coalesce(image.asset->url, imagePath)
 }`;
 
 const BELT_SLUGS_QUERY = groq`*[_type == "belt"].slug.current`;
@@ -51,19 +47,49 @@ const defaultHero: HeroContent = {
 
 export async function getHero(): Promise<HeroContent> {
   try {
-    const hero = await sanityClient.fetch<HeroContent | null>(HERO_QUERY, {}, { next: { revalidate: 60 } });
+    const hero = await sanityClient.fetch<HeroContent | null>(
+      HERO_QUERY,
+      {},
+      { next: { revalidate: 60 } },
+    );
+    if (process.env.NODE_ENV !== "production") {
+      // eslint-disable-next-line no-console
+      console.log("[getHero] Sanity result:", hero);
+    }
     return hero ?? defaultHero;
-  } catch {
+  } catch (err) {
+    if (process.env.NODE_ENV !== "production") {
+      // eslint-disable-next-line no-console
+      console.error("[getHero] Error fetching from Sanity:", err);
+    }
     return defaultHero;
   }
 }
 
 export async function getBelts(): Promise<BeltContent[]> {
   try {
-    const belts = await sanityClient.fetch<BeltContent[] | null>(BELTS_QUERY, {}, { next: { revalidate: 300 } });
-    return belts && belts.length > 0 ? belts : fallbackBelts;
-  } catch {
-    return fallbackBelts;
+    const cmsBelts = await sanityClient.fetch<BeltContent[] | null>(
+      BELTS_QUERY,
+      {},
+      { next: { revalidate: 300 } },
+    );
+
+    if (process.env.NODE_ENV !== "production") {
+      // eslint-disable-next-line no-console
+      console.log(
+        "[getBelts] Sanity result count:",
+        Array.isArray(cmsBelts) ? cmsBelts.length : cmsBelts,
+      );
+    }
+
+    // Only use belts from Sanity; if none, return an empty list.
+    return cmsBelts ?? [];
+  } catch (err) {
+    if (process.env.NODE_ENV !== "production") {
+      // eslint-disable-next-line no-console
+      console.error("[getBelts] Error fetching from Sanity:", err);
+    }
+    return [];
   }
 }
 
@@ -74,10 +100,17 @@ export async function getBeltBySlug(slug: string): Promise<BeltContent | null> {
       { slug },
       { next: { revalidate: 300 } }
     );
-    if (belt) return belt;
-    return getFallbackBeltById(slug) ?? null;
-  } catch {
-    return getFallbackBeltById(slug) ?? null;
+    if (process.env.NODE_ENV !== "production") {
+      // eslint-disable-next-line no-console
+      console.log("[getBeltBySlug] slug:", slug, "found:", !!belt);
+    }
+    return belt ?? null;
+  } catch (err) {
+    if (process.env.NODE_ENV !== "production") {
+      // eslint-disable-next-line no-console
+      console.error("[getBeltBySlug] Error fetching from Sanity:", err);
+    }
+    return null;
   }
 }
 
@@ -88,10 +121,20 @@ export async function getAllBeltSlugs(): Promise<string[]> {
       {},
       { next: { revalidate: 300 } }
     );
-    if (slugs && slugs.length > 0) return slugs;
-    return getFallbackBeltIds();
-  } catch {
-    return getFallbackBeltIds();
+    if (process.env.NODE_ENV !== "production") {
+      // eslint-disable-next-line no-console
+      console.log(
+        "[getAllBeltSlugs] Sanity result count:",
+        Array.isArray(slugs) ? slugs.length : slugs,
+      );
+    }
+    return slugs ?? [];
+  } catch (err) {
+    if (process.env.NODE_ENV !== "production") {
+      // eslint-disable-next-line no-console
+      console.error("[getAllBeltSlugs] Error fetching from Sanity:", err);
+    }
+    return [];
   }
 }
 

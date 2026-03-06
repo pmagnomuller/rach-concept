@@ -8,8 +8,9 @@ export const sanityClient = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true,
+  // In development, always hit the API directly so new
+  // content (like newly published belts) shows up instantly.
+  useCdn: process.env.NODE_ENV === "production",
   perspective: "published",
 });
-
 
