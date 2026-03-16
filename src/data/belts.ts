@@ -20,8 +20,7 @@ export const belts: Belt[] = [
   {
     id: "heritage-trio",
     name: "Westrn",
-    description:
-      "Um cinto intemporal para usar com vestidos e jeans de modo descontraído.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -36,8 +35,7 @@ export const belts: Belt[] = [
   {
     id: "amber-trail",
     name: "Cobra",
-    description:
-      "Um cinto simples mas sofisticado para usar no dia a dia ou como peça de destaque.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -52,7 +50,7 @@ export const belts: Belt[] = [
   {
     id: "saddle-vintage",
     name: "Tartaruga",
-    description: "Cinto em pele com fivela dourada.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -67,7 +65,7 @@ export const belts: Belt[] = [
   {
     id: "noir-eclipse",
     name: "Eclipse",
-    description: "Um cinto elegante e delicado para qualquer ocasião.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -83,7 +81,7 @@ export const belts: Belt[] = [
   {
     id: "terra-rustica",
     name: "Escaravelho",
-    description: "Cinto em pele com fivela em dourado velho.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -98,7 +96,7 @@ export const belts: Belt[] = [
   {
     id: "desert-ember",
     name: "Alvie",
-    description: "Cinto versátil em pele, perfeito para o dia a dia.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -112,7 +110,7 @@ export const belts: Belt[] = [
   {
     id: "mahogany-crest",
     name: "Lua Negra",
-    description: "Um cinto marcante em pele preta com detalhes escuros e sofisticados.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele preta",
@@ -126,7 +124,7 @@ export const belts: Belt[] = [
   {
     id: "copper-sands",
     name: "Shell",
-    description: "Cinto em pele com fivela em madrepérola, perfeito para looks de verão.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -141,8 +139,7 @@ export const belts: Belt[] = [
   {
     id: "midnight-halo",
     name: "Summer Turtle",
-    description:
-      "Um cinto em pele castanha com fivela em madrepérola, ideal para composições leves de verão.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele cor castanha",
@@ -155,7 +152,7 @@ export const belts: Belt[] = [
   {
     id: "brass-orbit",
     name: "Edie",
-    description: "Um cinto sofisticado com brilho de strass em contraste.",
+    description: "",
     material: "Pele",
     details: [
       "Fivela em zamac dourado ou prateado",
@@ -170,7 +167,7 @@ export const belts: Belt[] = [
   {
     id: "onyx-ridge",
     name: "Wave",
-    description: "Cinto em pele disponível em duas larguras, perfeito para diferentes silhuetas.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -183,7 +180,7 @@ export const belts: Belt[] = [
   {
     id: "sandstone-loop",
     name: "Chapa",
-    description: "Cinto em pele com fivela chapa dourada marcante.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -198,7 +195,7 @@ export const belts: Belt[] = [
   {
     id: "caramel-boulevard",
     name: "Circle",
-    description: "Cinto em pele com fivela circular em diferentes acabamentos metálicos.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -213,7 +210,7 @@ export const belts: Belt[] = [
   {
     id: "chestnut-parade",
     name: "Capri",
-    description: "Cinto em pele com fivela em dourado velho, inspirado em dias de sol.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -227,7 +224,7 @@ export const belts: Belt[] = [
   {
     id: "burnt-sienna-line",
     name: "Básico",
-    description: "Um cinto básico em pele para o dia a dia.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele",
@@ -241,7 +238,7 @@ export const belts: Belt[] = [
   {
     id: "graphite-edge",
     name: "Oval",
-    description: "Cinto em pele com fivela oval dourada.",
+    description: "",
     material: "Pele",
     details: [
       "Cinto em pele castanha, camel ou preta",
@@ -255,8 +252,7 @@ export const belts: Belt[] = [
   {
     id: "golden-dusk",
     name: "Entardecer Dourado",
-    description:
-      "Couro dourado-amarronzado suave que reflete a luz com beleza, finalizado com ferragens esculpidas para uma sensação luxuosa.",
+    description: "",
     material: "Couro Flor Integral",
     details: [
       "Acabamento de superfície que capta a luz",
@@ -281,8 +277,7 @@ export function getAllBeltIds(): string[] {
 const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "heritage-trio": {
     name: "Heritage Trio",
-    description:
-      "A celebration of classic Western-inspired hardware, this statement belt pairs sculpted metalwork with rich leather tones for a timeless, collectible piece.",
+    description: "",
     material: "Full-Grain Leather",
     details: [
       "Hand-polished antique gold buckle set",
@@ -293,8 +288,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "amber-trail": {
     name: "Amber Trail",
-    description:
-      "Warm amber leather with subtle texture and sculpted buckle detailing, ideal for elevating denim or cinching a fluid dress.",
+    description: "",
     material: "Vegetable-Tanned Leather",
     details: [
       "Hand-burnished finish",
@@ -305,8 +299,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "saddle-vintage": {
     name: "Saddle Vintage",
-    description:
-      "Inspired by heritage saddlery, this belt features a deep saddle-brown tone with vintage metal accents for everyday luxury.",
+    description: "",
     material: "Italian Full-Grain Leather",
     details: [
       "Contrast topstitching",
@@ -317,8 +310,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "noir-eclipse": {
     name: "Noir Eclipse",
-    description:
-      "A sleek midnight-black belt with dramatic metalwork that adds instant edge to tailored and casual looks alike.",
+    description: "",
     material: "Premium Calfskin",
     details: [
       "Matte black leather finish",
@@ -329,8 +321,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "terra-rustica": {
     name: "Terra Rustica",
-    description:
-      "Earthy, sun-warmed brown leather with artisanal buckle engraving that nods to handcrafted traditions.",
+    description: "",
     material: "Waxed Leather",
     details: [
       "Lightly distressed texture",
@@ -341,8 +332,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "desert-ember": {
     name: "Desert Ember",
-    description:
-      "A glowing burnt-orange belt that recalls desert sunsets, finished with bold metallic details for a modern statement.",
+    description: "",
     material: "Top-Grain Leather",
     details: [
       "Smooth waxed surface",
@@ -353,8 +343,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "mahogany-crest": {
     name: "Mahogany Crest",
-    description:
-      "Deep mahogany tones and crest-inspired buckle engraving come together in a belt designed for elevated everyday wear.",
+    description: "",
     material: "Vegetable-Tanned Leather",
     details: [
       "Rich, multi-tone color depth",
@@ -365,8 +354,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "copper-sands": {
     name: "Copper Sands",
-    description:
-      "Soft copper-brown leather with a gentle sheen, perfect for adding warmth to monochrome or neutral outfits.",
+    description: "",
     material: "Nubuck Leather",
     details: [
       "Powdery, velvety surface",
@@ -377,8 +365,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "midnight-halo": {
     name: "Midnight Halo",
-    description:
-      "An inky black belt framed by luminous metalwork, ideal for sharp tailoring and minimalist silhouettes.",
+    description: "",
     material: "Smooth Calf Leather",
     details: [
       "High-contrast metal hardware",
@@ -389,8 +376,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "brass-orbit": {
     name: "Brass Orbit",
-    description:
-      "A sculptural brass-tone buckle meets structured leather, creating a bold belt that anchors any look.",
+    description: "",
     material: "Full-Grain Leather",
     details: [
       "Bold central buckle silhouette",
@@ -401,8 +387,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "onyx-ridge": {
     name: "Onyx Ridge",
-    description:
-      "Textured black leather with a ridged grain and darkened buckle, designed for subtle depth and dimension.",
+    description: "",
     material: "Grain-Embossed Leather",
     details: [
       "Pronounced grain pattern",
@@ -413,8 +398,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "sandstone-loop": {
     name: "Sandstone Loop",
-    description:
-      "A soft sandstone hue with tonal stitching and gently rounded hardware, bringing an understated elegance to your wardrobe.",
+    description: "",
     material: "Suede-Effect Leather",
     details: [
       "Tonal edge stitching",
@@ -425,8 +409,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "caramel-boulevard": {
     name: "Caramel Boulevard",
-    description:
-      "A luminous caramel belt that pairs beautifully with denim, tailoring, and airy dresses alike.",
+    description: "",
     material: "Top-Grain Leather",
     details: [
       "Smooth, even color",
@@ -437,8 +420,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "chestnut-parade": {
     name: "Chestnut Parade",
-    description:
-      "Rich chestnut leather accented with warm hardware for a refined yet approachable everyday belt.",
+    description: "",
     material: "Vegetable-Tanned Leather",
     details: [
       "Subtle two-tone shading",
@@ -449,8 +431,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "burnt-sienna-line": {
     name: "Burnt Sienna Line",
-    description:
-      "A bold burnt-sienna belt with a strong linear silhouette that instantly sharpens relaxed outfits.",
+    description: "",
     material: "Smooth Leather",
     details: [
       "Minimal topstitching",
@@ -461,8 +442,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "graphite-edge": {
     name: "Graphite Edge",
-    description:
-      "Dark graphite leather with crisp edges and a cool-toned buckle, designed for modern, urban styling.",
+    description: "",
     material: "Calfskin Leather",
     details: [
       "Semi-matte finish",
@@ -473,8 +453,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "golden-dusk": {
     name: "Golden Dusk",
-    description:
-      "Soft golden-brown leather that catches the light beautifully, finished with sculpted hardware for a luxe feel.",
+    description: "",
     material: "Full-Grain Leather",
     details: [
       "Light-catching surface finish",
@@ -485,8 +464,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   },
   "espresso-royale": {
     name: "Espresso Royale",
-    description:
-      "An ultra-deep espresso belt that anchors any outfit, from sharp suiting to elevated weekend wear.",
+    description: "",
     material: "Vegetable-Tanned Leather",
     details: [
       "Intense dark-brown tone",
