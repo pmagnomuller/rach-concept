@@ -26,10 +26,10 @@ export default function Footer() {
               <li>
                 {ui.footerEmail}:{" "}
                 <a
-                  href="mailto:contact@rachconcept.com"
+                  href="mailto:rachconcept.store@gmail.com"
                   className="text-foreground hover:text-accent transition-colors"
                 >
-                  contact@rachconcept.com
+                  rachconcept.store@gmail.com
                 </a>
               </li>
               <li>

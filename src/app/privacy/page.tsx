@@ -31,7 +31,7 @@ const CONTENT = {
       },
       {
         heading: "6. Contacto",
-        body: "Para questões de privacidade, contacte: contact@rachconcept.com.",
+        body: "Para questões de privacidade, contacte: rachconcept.store@gmail.com.",
       },
     ],
   },
@@ -63,7 +63,7 @@ const CONTENT = {
       },
       {
         heading: "6. Contact",
-        body: "For privacy questions, contact: contact@rachconcept.com.",
+        body: "For privacy questions, contact: rachconcept.store@gmail.com.",
       },
     ],
   },
