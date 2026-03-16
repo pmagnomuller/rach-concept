@@ -62,7 +62,7 @@ export const UI_TEXT: Record<Language, UiDictionary> = {
     heroNote: "Cintos feitos em Portugal.",
     heroImageAlt: "Close de um cinto RachConcept combinado com uma blusa de seda",
     homeCollectionEyebrow: "A Coleção",
-    homeCollectionTitle: "Excelência Artesanal",
+    homeCollectionTitle: "",
     homeCollectionCta: "Ver Coleção Completa",
     homePhilosophyEyebrow: "A Nossa Filosofia",
     homePhilosophyTitle: "Cada conjunto merece o toque final perfeito",
