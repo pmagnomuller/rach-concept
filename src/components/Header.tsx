@@ -3,9 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { useLanguage } from "@/lib/i18n";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, setLanguage, ui } = useLanguage();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -30,21 +32,43 @@ export default function Header() {
               href="/" 
               className="text-sm font-medium tracking-wider uppercase text-muted hover:text-foreground transition-colors"
             >
-              Home
+              {ui.navHome}
             </Link>
             <Link 
               href="/catalogue" 
               className="text-sm font-medium tracking-wider uppercase text-muted hover:text-foreground transition-colors"
             >
-              Catalogue
+              {ui.navCatalogue}
             </Link>
+            <div className="ml-2 inline-flex items-center rounded-full border border-border bg-background/70 p-1 text-xs font-medium tracking-wider uppercase">
+              <button
+                type="button"
+                onClick={() => setLanguage("pt")}
+                className={`rounded-full px-3 py-1 transition-colors ${
+                  language === "pt" ? "bg-foreground text-background" : "text-muted hover:text-foreground"
+                }`}
+                aria-label="Mudar para português"
+              >
+                PT
+              </button>
+              <button
+                type="button"
+                onClick={() => setLanguage("en")}
+                className={`rounded-full px-3 py-1 transition-colors ${
+                  language === "en" ? "bg-foreground text-background" : "text-muted hover:text-foreground"
+                }`}
+                aria-label="Switch to English"
+              >
+                EN
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 text-foreground"
-            aria-label="Toggle menu"
+            aria-label={ui.toggleMenu}
           >
             <svg
               className="w-6 h-6"
@@ -80,15 +104,37 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
                 className="text-sm font-medium tracking-wider uppercase text-muted hover:text-foreground transition-colors"
               >
-                Home
+                {ui.navHome}
               </Link>
               <Link 
                 href="/catalogue"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-sm font-medium tracking-wider uppercase text-muted hover:text-foreground transition-colors"
               >
-                Catalogue
+                {ui.navCatalogue}
               </Link>
+              <div className="inline-flex items-center self-start rounded-full border border-border bg-background/70 p-1 text-xs font-medium tracking-wider uppercase">
+                <button
+                  type="button"
+                  onClick={() => setLanguage("pt")}
+                  className={`rounded-full px-3 py-1 transition-colors ${
+                    language === "pt" ? "bg-foreground text-background" : "text-muted hover:text-foreground"
+                  }`}
+                  aria-label="Mudar para português"
+                >
+                  PT
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setLanguage("en")}
+                  className={`rounded-full px-3 py-1 transition-colors ${
+                    language === "en" ? "bg-foreground text-background" : "text-muted hover:text-foreground"
+                  }`}
+                  aria-label="Switch to English"
+                >
+                  EN
+                </button>
+              </div>
             </div>
           </div>
         )}

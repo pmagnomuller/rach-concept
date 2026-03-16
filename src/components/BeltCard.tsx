@@ -1,12 +1,18 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { Belt } from "@/data/belts";
+import { Belt, getLocalizedBeltContent } from "@/data/belts";
+import { useLanguage } from "@/lib/i18n";
 
 interface BeltCardProps {
   belt: Belt;
 }
 
 export default function BeltCard({ belt }: BeltCardProps) {
+  const { language, ui } = useLanguage();
+  const localizedBelt = getLocalizedBeltContent(belt, language);
+
   return (
     <Link 
       href={`/belt/${belt.id}`}
@@ -20,7 +26,7 @@ export default function BeltCard({ belt }: BeltCardProps) {
         >
           <Image
             src={belt.image}
-            alt={belt.name}
+            alt={localizedBelt.name}
             fill
             sizes="(min-width: 1024px) 320px, (min-width: 768px) 40vw, 80vw"
             className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -35,7 +41,7 @@ export default function BeltCard({ belt }: BeltCardProps) {
           {/* Quick View Text */}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <span className="px-6 py-2 bg-background/95 text-foreground text-xs tracking-[0.2em] uppercase font-medium">
-              View Details
+              {ui.quickView}
             </span>
           </div>
         </div>
@@ -43,10 +49,10 @@ export default function BeltCard({ belt }: BeltCardProps) {
         {/* Belt Info */}
         <div className="pt-5 pb-2">
           <h3 className="font-serif text-xl font-medium text-foreground group-hover:text-accent transition-colors duration-300">
-            {belt.name}
+            {localizedBelt.name}
           </h3>
           <p className="text-sm text-muted mt-1 tracking-wide">
-            {belt.material}
+            {localizedBelt.material}
           </p>
         </div>
       </article>

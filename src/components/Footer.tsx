@@ -1,4 +1,10 @@
+"use client";
+
+import { useLanguage } from "@/lib/i18n";
+
 export default function Footer() {
+  const { ui } = useLanguage();
+
   return (
     <footer className="border-t border-border py-12 mt-20">
       <div className="max-w-6xl mx-auto px-6">
@@ -10,12 +16,12 @@ export default function Footer() {
 
           {/* Tagline */}
           <p className="font-serif text-muted italic">
-            Just add a belt!
+            {ui.footerTagline}
           </p>
 
           {/* Copyright */}
           <p className="text-sm text-muted">
-            © {new Date().getFullYear()} RachConcept. All rights reserved.
+            © {new Date().getFullYear()} RachConcept. {ui.footerRights}
           </p>
         </div>
       </div>

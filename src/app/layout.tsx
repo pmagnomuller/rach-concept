@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { LanguageProvider } from "@/lib/i18n";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -17,8 +18,9 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "RachConcept | Just Add a Belt!",
-  description: "Discover the exclusive belt collection by RachConcept. Handcrafted elegance for every occasion.",
+  title: "RachConcept | Just Add a Belt",
+  description:
+    "Discover the exclusive belt collection by RachConcept. Elegância artesanal para cada ocasião.",
 };
 
 export default function RootLayout({
@@ -27,13 +29,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-PT">
       <body
         className={`${cormorant.variable} ${raleway.variable} antialiased`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

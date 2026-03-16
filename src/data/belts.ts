@@ -9,17 +9,25 @@ export interface Belt {
   image: string;
 }
 
+export interface LocalizedBeltContent {
+  name: string;
+  description: string;
+  material: string;
+  details: string[];
+}
+
 export const belts: Belt[] = [
   {
     id: "heritage-trio",
-    name: "Cinto Western",
+    name: "Trio Clássico",
     description:
-      "Um cinto intemporal para usar com vestidos e jeans de modo descontraido.",
-    material: "Cinto em pele",
+      "Uma celebração das ferragens clássicas inspiradas no estilo western, este cinto marcante combina metal esculpido com tons ricos de couro para uma peça atemporal e colecionável.",
+    material: "Couro Flor Integral",
     details: [
-      "Varias cores",
-      "Largura: 4 cm",
-      "Fivela em zamac dourada",
+      "Conjunto de fivelas em dourado envelhecido, polidas à mão",
+      "Paleta de couro em três tons",
+      "Largura: 3,2 cm",
+      "Desenhado e produzido em Portugal",
     ],
     gradient: "linear-gradient(135deg, #C79A63 0%, #8A5A35 50%, #3A2414 100%)",
     accentColor: "#D9B26A",
@@ -27,14 +35,15 @@ export const belts: Belt[] = [
   },
   {
     id: "amber-trail",
-    name: "Cinto cobra",
+    name: "Trilha Âmbar",
     description:
-      "Um cinto simples mas sofisticado para usar no dia a dia ou como peca de destaque.",
-    material: "Cinto em pele",
+      "Couro âmbar quente com textura sutil e detalhes de fivela esculpida, ideal para valorizar o jeans ou marcar vestidos fluidos.",
+    material: "Couro Curtido Vegetal",
     details: [
-      "Varias cores",
-      "Largura: 4 cm",
-      "Fivela dourada com strass em cor preta",
+      "Acabamento brunido à mão",
+      "Fivela e passador com acabamento em latão",
+      "Largura: 3,5 cm",
+      "Envelhece com pátina única",
     ],
     gradient: "linear-gradient(135deg, #E1A057 0%, #BC7332 50%, #6C3B1A 100%)",
     accentColor: "#E9B26C",
@@ -42,14 +51,15 @@ export const belts: Belt[] = [
   },
   {
     id: "saddle-vintage",
-    name: "Cinto tartaruga",
+    name: "Sela Vintage",
     description:
-      "Um cinto versatil para o dia a dia, com acabamento classico e elegante.",
-    material: "Cinto em pele",
+      "Inspirado na tradição da selaria, este cinto traz um tom marrom sela profundo com acentos metálicos vintage para um luxo cotidiano.",
+    material: "Couro Italiano Flor Integral",
     details: [
-      "Varias cores",
-      "Largura: 4 cm",
-      "Fivela dourada",
+      "Pesponto contrastante",
+      "Fivela em latão vintage",
+      "Largura: 3,8 cm",
+      "Cortado à mão e com pintura de borda",
     ],
     gradient: "linear-gradient(135deg, #A5663A 0%, #7A4323 50%, #3E2213 100%)",
     accentColor: "#C88A54",
@@ -57,13 +67,15 @@ export const belts: Belt[] = [
   },
   {
     id: "noir-eclipse",
-    name: "Cinto eclipse (botao)",
-    description: "Cinto elegante.",
-    material: "Cinto em pele preta",
+    name: "Eclipse Noir",
+    description:
+      "Um cinto preto meia-noite elegante com ferragens marcantes que adicionam atitude imediata a looks de alfaiataria e casuais.",
+    material: "Couro Bovino Premium",
     details: [
-      "Cor: preto",
-      "Largura: 2 cm",
-      "Fivela dourada",
+      "Acabamento em couro preto fosco",
+      "Fivela esculpida em metal grafite",
+      "Largura: 3 cm",
+      "Toque macio e flexível",
     ],
     gradient: "linear-gradient(135deg, #2B2B2B 0%, #141414 50%, #050505 100%)",
     accentColor: "#555555",
@@ -71,13 +83,15 @@ export const belts: Belt[] = [
   },
   {
     id: "terra-rustica",
-    name: "Cinto Escaravelho",
-    description: "Um cinto em pele com identidade forte e acabamento classico.",
-    material: "Cinto em pele",
+    name: "Terra Rustica",
+    description:
+      "Couro marrom terroso aquecido pelo sol, com gravação artesanal na fivela que remete às tradições feitas à mão.",
+    material: "Couro Encerado",
     details: [
-      "Varias cores",
-      "Largura: 4 cm",
-      "Fivela dourado velho",
+      "Textura levemente desgastada",
+      "Fivela em tom de latão gravado",
+      "Largura: 3,4 cm",
+      "Acabamento encerado resistente à água",
     ],
     gradient: "linear-gradient(135deg, #B2734A 0%, #8B4B2A 50%, #4A2414 100%)",
     accentColor: "#E09B62",
@@ -85,12 +99,15 @@ export const belts: Belt[] = [
   },
   {
     id: "desert-ember",
-    name: "Cinto Alvie",
-    description: "Um modelo classico e versatil para usar em diferentes ocasioes.",
-    material: "Cinto em pele",
+    name: "Brasa do Deserto",
+    description:
+      "Um cinto laranja queimado vibrante que remete ao pôr do sol no deserto, finalizado com detalhes metálicos marcantes para uma proposta moderna.",
+    material: "Couro de Flor Superior",
     details: [
-      "Castanho ou preto",
-      "Largura: 3,5 cm",
+      "Superfície lisa e encerada",
+      "Fivela em dourado escovado",
+      "Largura: 3,2 cm",
+      "Tingimento firme em toda a pele",
     ],
     gradient: "linear-gradient(135deg, #F48C4A 0%, #D26631 50%, #7C3515 100%)",
     accentColor: "#FFB27A",
@@ -98,12 +115,15 @@ export const belts: Belt[] = [
   },
   {
     id: "mahogany-crest",
-    name: "Cinto lua negra",
+    name: "Brasão Mogno",
     description:
-      "Um cinto marcante em pele preta, com toque sofisticado e contemporaneo.",
-    material: "Cinto em pele preta",
+      "Tons profundos de mogno e gravação de fivela inspirada em brasões se unem em um cinto pensado para elevar o uso diário.",
+    material: "Couro Curtido Vegetal",
     details: [
-      "Fivela dourado velho com pedras cor preto",
+      "Profundidade de cor rica em múltiplos tons",
+      "Fivela assinada com gravação",
+      "Largura: 3,5 cm",
+      "Bordas brunidas à mão",
     ],
     gradient: "linear-gradient(135deg, #7F3B30 0%, #5B221C 50%, #321112 100%)",
     accentColor: "#C06855",
@@ -111,14 +131,15 @@ export const belts: Belt[] = [
   },
   {
     id: "copper-sands",
-    name: "Cinto shell",
+    name: "Areias de Cobre",
     description:
-      "Um cinto em pele com acabamento elegante e fivela de madreperola.",
-    material: "Cinto em pele",
+      "Couro marrom acobreado macio com brilho suave, perfeito para adicionar calor a composições monocromáticas ou neutras.",
+    material: "Couro Nobuck",
     details: [
-      "Cor azul ou castanho",
-      "Largura: 4 cm",
-      "Fivela em madreperola",
+      "Superfície aveludada e levemente pulverizada",
+      "Fivela em latão envelhecido claro",
+      "Largura: 3,8 cm",
+      "Estrutura confortável e flexível",
     ],
     gradient: "linear-gradient(135deg, #C8875A 0%, #A0633F 50%, #5A2F1B 100%)",
     accentColor: "#F1B181",
@@ -126,11 +147,15 @@ export const belts: Belt[] = [
   },
   {
     id: "midnight-halo",
-    name: "Cinto Summer Turtle",
-    description: "Um cinto em pele castanha com visual leve e acabamento sofisticado.",
-    material: "Cinto em pele cor castanha",
+    name: "Halo da Meia-Noite",
+    description:
+      "Um cinto preto intenso emoldurado por ferragens luminosas, ideal para alfaiataria precisa e silhuetas minimalistas.",
+    material: "Couro Bovino Liso",
     details: [
-      "Fivela em madreperola",
+      "Ferragens metálicas de alto contraste",
+      "Tira limpa, sem textura",
+      "Largura: 3 cm",
+      "Pintura de borda tonal sutil",
     ],
     gradient: "linear-gradient(135deg, #232323 0%, #101010 50%, #000000 100%)",
     accentColor: "#C0B28A",
@@ -138,13 +163,15 @@ export const belts: Belt[] = [
   },
   {
     id: "brass-orbit",
-    name: "Cinto edie",
+    name: "Órbita de Latão",
     description:
-      "Um cinto com presenca, ideal para elevar o look com um toque de brilho.",
-    material: "Em pele castanha ou preta",
+      "Uma fivela escultural em tom de latão encontra o couro estruturado, criando um cinto marcante que sustenta qualquer look.",
+    material: "Couro Flor Integral",
     details: [
-      "Fivela em zamac dourado ou prateado com strass em cor preta",
-      "Largura: 4 cm",
+      "Silhueta central de fivela marcante",
+      "Tira estruturada que mantém a forma",
+      "Largura: 3,6 cm",
+      "Produzido em tiragens limitadas",
     ],
     gradient: "linear-gradient(135deg, #C4A15B 0%, #8B6C33 50%, #473619 100%)",
     accentColor: "#E3C276",
@@ -152,11 +179,15 @@ export const belts: Belt[] = [
   },
   {
     id: "onyx-ridge",
-    name: "Cinto Wave",
-    description: "Modelo versatil em pele, ideal para diferentes estilos.",
-    material: "Cinto em pele",
+    name: "Crista Ônix",
+    description:
+      "Couro preto texturizado com grão em relevo e fivela escurecida, pensado para profundidade e dimensão sutis.",
+    material: "Couro com Grão Gravado",
     details: [
-      "Largura: 2 cm / 3,5 cm",
+      "Padronagem de grão pronunciada",
+      "Ferragens em níquel escuro",
+      "Largura: 3,2 cm",
+      "Construção resistente para o dia a dia",
     ],
     gradient: "linear-gradient(135deg, #3B3B3B 0%, #202020 50%, #070707 100%)",
     accentColor: "#797979",
@@ -164,13 +195,15 @@ export const belts: Belt[] = [
   },
   {
     id: "sandstone-loop",
-    name: "Cinto Chapa",
+    name: "Laço Arenito",
     description:
-      "Um cinto em pele com acabamento classico e versatil para o dia a dia.",
-    material: "Cinto em pele varias cores",
+      "Um tom suave de arenito com costura tonal e ferragens delicadamente arredondadas, trazendo elegância discreta ao seu guarda-roupa.",
+    material: "Couro com Efeito Camurça",
     details: [
-      "Fivela dourada",
-      "Largura: 4 cm",
+      "Costura tonal nas bordas",
+      "Fivela arredondada e polida",
+      "Largura: 3,4 cm",
+      "Toque macio e flexível",
     ],
     gradient: "linear-gradient(135deg, #E3C7A0 0%, #C79D72 50%, #8C6643 100%)",
     accentColor: "#F1D3AC",
@@ -178,12 +211,15 @@ export const belts: Belt[] = [
   },
   {
     id: "caramel-boulevard",
-    name: "Cinto Circle",
-    description: "Um cinto em pele com design moderno e acabamento metalico elegante.",
-    material: "Cinto em pele varias cores",
+    name: "Boulevard Caramelo",
+    description:
+      "Um cinto caramelo luminoso que combina perfeitamente com jeans, alfaiataria e vestidos leves.",
+    material: "Couro de Flor Superior",
     details: [
-      "Fivela niquelada chumbo ou dourada",
-      "Largura: 4 cm",
+      "Cor uniforme e suave",
+      "Fivela retangular clássica",
+      "Largura: 3,5 cm",
+      "Acabamento com bordas tom sobre tom",
     ],
     gradient: "linear-gradient(135deg, #E2A768 0%, #C17E40 50%, #7A4421 100%)",
     accentColor: "#F4BC7B",
@@ -191,11 +227,15 @@ export const belts: Belt[] = [
   },
   {
     id: "chestnut-parade",
-    name: "Cinto capri",
-    description: "Um cinto em pele classico, com toque vintage no acabamento da fivela.",
-    material: "Cinto em pele varias cores",
+    name: "Desfile Castanho",
+    description:
+      "Couro castanho rico, destacado por ferragens quentes para um cinto diário refinado e acessível.",
+    material: "Couro Curtido Vegetal",
     details: [
-      "Fivela dourado velho",
+      "Sombreamento sutil em dois tons",
+      "Fivela em latão polido",
+      "Largura: 3,7 cm",
+      "Feito à mão em pequenos lotes",
     ],
     gradient: "linear-gradient(135deg, #8A4B2D 0%, #65301D 50%, #321611 100%)",
     accentColor: "#D58B5E",
@@ -203,11 +243,15 @@ export const belts: Belt[] = [
   },
   {
     id: "burnt-sienna-line",
-    name: "Cinto basico",
-    description: "Essencial do guarda-roupa para composicoes simples e elegantes.",
-    material: "Em pele varias cores",
+    name: "Linha Siena Queimada",
+    description:
+      "Um cinto siena queimado marcante, com silhueta linear forte que deixa produções descontraídas instantaneamente mais elegantes.",
+    material: "Couro Liso",
     details: [
-      "Largura: 2 cm",
+      "Pesponto minimalista",
+      "Fivela metálica angular",
+      "Largura: 3,5 cm",
+      "Acabamento com estabilidade de cor",
     ],
     gradient: "linear-gradient(135deg, #C8683E 0%, #A04626 50%, #5A2414 100%)",
     accentColor: "#F58A54",
@@ -215,12 +259,15 @@ export const belts: Belt[] = [
   },
   {
     id: "graphite-edge",
-    name: "Cinto Oval",
-    description: "Modelo classico em tons neutros, facil de combinar em qualquer look.",
-    material: "Cinto em pele castanha camel ou preta",
+    name: "Borda Grafite",
+    description:
+      "Couro grafite escuro com bordas definidas e fivela de tom frio, pensado para um visual urbano e moderno.",
+    material: "Couro Bovino",
     details: [
-      "Fivela dourada",
-      "Largura: 3,5 cm",
+      "Acabamento semimate",
+      "Ferragens em tom prateado frio",
+      "Largura: 3 cm",
+      "Bordas cortadas com precisão",
     ],
     gradient: "linear-gradient(135deg, #4A4A4A 0%, #292929 50%, #0F0F0F 100%)",
     accentColor: "#B0B0B0",
@@ -228,16 +275,35 @@ export const belts: Belt[] = [
   },
   {
     id: "golden-dusk",
-    name: "Cinto turtle",
-    description: "Cinto em pele preta com acabamento elegante em madreperola.",
-    material: "Cinto em pele preta",
+    name: "Entardecer Dourado",
+    description:
+      "Couro dourado-amarronzado suave que reflete a luz com beleza, finalizado com ferragens esculpidas para uma sensação luxuosa.",
+    material: "Couro Flor Integral",
     details: [
-      "Fivela madreperola",
-      "Largura: 4 cm",
+      "Acabamento de superfície que capta a luz",
+      "Fivela escultural curvada",
+      "Largura: 3,4 cm",
+      "Feito a partir de uma peça única de couro",
     ],
     gradient: "linear-gradient(135deg, #D9A962 0%, #B57A3B 50%, #6F411D 100%)",
     accentColor: "#F0C57F",
     image: "/produto17.jpeg",
+  },
+  {
+    id: "espresso-royale",
+    name: "Expresso Royale",
+    description:
+      "Um cinto espresso ultra-profundo que sustenta qualquer produção, da alfaiataria impecável ao visual sofisticado de fim de semana.",
+    material: "Couro Curtido Vegetal",
+    details: [
+      "Tom marrom-escuro intenso",
+      "Acabamento com brilho sutil",
+      "Largura: 3,5 cm",
+      "Desenvolvido para amaciar com o tempo",
+    ],
+    gradient: "linear-gradient(135deg, #3A2317 0%, #23140E 50%, #0F0705 100%)",
+    accentColor: "#8B5A3C",
+    image: "/produto18.jpeg",
   },
 ];
 
@@ -247,5 +313,240 @@ export function getBeltById(id: string): Belt | undefined {
 
 export function getAllBeltIds(): string[] {
   return belts.map((belt) => belt.id);
+}
+
+const beltsEnglish: Record<string, LocalizedBeltContent> = {
+  "heritage-trio": {
+    name: "Heritage Trio",
+    description:
+      "A celebration of classic Western-inspired hardware, this statement belt pairs sculpted metalwork with rich leather tones for a timeless, collectible piece.",
+    material: "Full-Grain Leather",
+    details: [
+      "Hand-polished antique gold buckle set",
+      "Three-tone leather palette",
+      "Width: 3.2 cm",
+      "Designed in Brazil",
+    ],
+  },
+  "amber-trail": {
+    name: "Amber Trail",
+    description:
+      "Warm amber leather with subtle texture and sculpted buckle detailing, ideal for elevating denim or cinching a fluid dress.",
+    material: "Vegetable-Tanned Leather",
+    details: [
+      "Hand-burnished finish",
+      "Brass-finished buckle and keeper",
+      "Width: 3.5 cm",
+      "Ages with a unique patina",
+    ],
+  },
+  "saddle-vintage": {
+    name: "Saddle Vintage",
+    description:
+      "Inspired by heritage saddlery, this belt features a deep saddle-brown tone with vintage metal accents for everyday luxury.",
+    material: "Italian Full-Grain Leather",
+    details: [
+      "Contrast topstitching",
+      "Vintage brass buckle",
+      "Width: 3.8 cm",
+      "Hand-cut and edge-painted",
+    ],
+  },
+  "noir-eclipse": {
+    name: "Noir Eclipse",
+    description:
+      "A sleek midnight-black belt with dramatic metalwork that adds instant edge to tailored and casual looks alike.",
+    material: "Premium Calfskin",
+    details: [
+      "Matte black leather finish",
+      "Sculpted gunmetal buckle",
+      "Width: 3 cm",
+      "Smooth, flexible hand-feel",
+    ],
+  },
+  "terra-rustica": {
+    name: "Terra Rustica",
+    description:
+      "Earthy, sun-warmed brown leather with artisanal buckle engraving that nods to handcrafted traditions.",
+    material: "Waxed Leather",
+    details: [
+      "Lightly distressed texture",
+      "Etched brass-tone buckle",
+      "Width: 3.4 cm",
+      "Water-resistant waxed finish",
+    ],
+  },
+  "desert-ember": {
+    name: "Desert Ember",
+    description:
+      "A glowing burnt-orange belt that recalls desert sunsets, finished with bold metallic details for a modern statement.",
+    material: "Top-Grain Leather",
+    details: [
+      "Smooth waxed surface",
+      "Brushed gold buckle",
+      "Width: 3.2 cm",
+      "Colorfast dyed through the hide",
+    ],
+  },
+  "mahogany-crest": {
+    name: "Mahogany Crest",
+    description:
+      "Deep mahogany tones and crest-inspired buckle engraving come together in a belt designed for elevated everyday wear.",
+    material: "Vegetable-Tanned Leather",
+    details: [
+      "Rich, multi-tone color depth",
+      "Signature engraved buckle",
+      "Width: 3.5 cm",
+      "Edges burnished by hand",
+    ],
+  },
+  "copper-sands": {
+    name: "Copper Sands",
+    description:
+      "Soft copper-brown leather with a gentle sheen, perfect for adding warmth to monochrome or neutral outfits.",
+    material: "Nubuck Leather",
+    details: [
+      "Powdery, velvety surface",
+      "Light antique brass buckle",
+      "Width: 3.8 cm",
+      "Comfortable, flexible structure",
+    ],
+  },
+  "midnight-halo": {
+    name: "Midnight Halo",
+    description:
+      "An inky black belt framed by luminous metalwork, ideal for sharp tailoring and minimalist silhouettes.",
+    material: "Smooth Calf Leather",
+    details: [
+      "High-contrast metal hardware",
+      "Sleek, untextured strap",
+      "Width: 3 cm",
+      "Subtle tonal edge painting",
+    ],
+  },
+  "brass-orbit": {
+    name: "Brass Orbit",
+    description:
+      "A sculptural brass-tone buckle meets structured leather, creating a bold belt that anchors any look.",
+    material: "Full-Grain Leather",
+    details: [
+      "Bold central buckle silhouette",
+      "Structured strap keeps its shape",
+      "Width: 3.6 cm",
+      "Crafted in limited runs",
+    ],
+  },
+  "onyx-ridge": {
+    name: "Onyx Ridge",
+    description:
+      "Textured black leather with a ridged grain and darkened buckle, designed for subtle depth and dimension.",
+    material: "Grain-Embossed Leather",
+    details: [
+      "Pronounced grain pattern",
+      "Dark nickel hardware",
+      "Width: 3.2 cm",
+      "Durable, everyday construction",
+    ],
+  },
+  "sandstone-loop": {
+    name: "Sandstone Loop",
+    description:
+      "A soft sandstone hue with tonal stitching and gently rounded hardware, bringing an understated elegance to your wardrobe.",
+    material: "Suede-Effect Leather",
+    details: [
+      "Tonal edge stitching",
+      "Rounded, polished buckle",
+      "Width: 3.4 cm",
+      "Soft, flexible hand-feel",
+    ],
+  },
+  "caramel-boulevard": {
+    name: "Caramel Boulevard",
+    description:
+      "A luminous caramel belt that pairs beautifully with denim, tailoring, and airy dresses alike.",
+    material: "Top-Grain Leather",
+    details: [
+      "Smooth, even color",
+      "Classic rectangular buckle",
+      "Width: 3.5 cm",
+      "Finished with tone-on-tone edges",
+    ],
+  },
+  "chestnut-parade": {
+    name: "Chestnut Parade",
+    description:
+      "Rich chestnut leather accented with warm hardware for a refined yet approachable everyday belt.",
+    material: "Vegetable-Tanned Leather",
+    details: [
+      "Subtle two-tone shading",
+      "Polished brass buckle",
+      "Width: 3.7 cm",
+      "Handcrafted in small batches",
+    ],
+  },
+  "burnt-sienna-line": {
+    name: "Burnt Sienna Line",
+    description:
+      "A bold burnt-sienna belt with a strong linear silhouette that instantly sharpens relaxed outfits.",
+    material: "Smooth Leather",
+    details: [
+      "Minimal topstitching",
+      "Angular metal buckle",
+      "Width: 3.5 cm",
+      "Color-stable finish",
+    ],
+  },
+  "graphite-edge": {
+    name: "Graphite Edge",
+    description:
+      "Dark graphite leather with crisp edges and a cool-toned buckle, designed for modern, urban styling.",
+    material: "Calfskin Leather",
+    details: [
+      "Semi-matte finish",
+      "Cool silver-tone hardware",
+      "Width: 3 cm",
+      "Precision-cut edges",
+    ],
+  },
+  "golden-dusk": {
+    name: "Golden Dusk",
+    description:
+      "Soft golden-brown leather that catches the light beautifully, finished with sculpted hardware for a luxe feel.",
+    material: "Full-Grain Leather",
+    details: [
+      "Light-catching surface finish",
+      "Curved sculptural buckle",
+      "Width: 3.4 cm",
+      "Made from single leather piece",
+    ],
+  },
+  "espresso-royale": {
+    name: "Espresso Royale",
+    description:
+      "An ultra-deep espresso belt that anchors any outfit, from sharp suiting to elevated weekend wear.",
+    material: "Vegetable-Tanned Leather",
+    details: [
+      "Intense dark-brown tone",
+      "Subtle sheen finish",
+      "Width: 3.5 cm",
+      "Built to soften with time",
+    ],
+  },
+};
+
+export function getLocalizedBeltContent(
+  belt: Belt,
+  language: "pt" | "en"
+): LocalizedBeltContent {
+  if (language === "en" && beltsEnglish[belt.id]) {
+    return beltsEnglish[belt.id];
+  }
+
+  return {
+    name: belt.name,
+    description: belt.description,
+    material: belt.material,
+    details: belt.details,
+  };
 }
 
