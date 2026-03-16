@@ -35,7 +35,7 @@ export default function Footer() {
               <li>
                 {ui.footerInstagram}:{" "}
                 <a
-                  href="https://instagram.com/rachconcept"
+                  href="https://instagram.com/rachconcept.store"
                   target="_blank"
                   rel="noreferrer"
                   className="text-foreground hover:text-accent transition-colors"
