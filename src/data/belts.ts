@@ -288,23 +288,7 @@ export const belts: Belt[] = [
     gradient: "linear-gradient(135deg, #D9A962 0%, #B57A3B 50%, #6F411D 100%)",
     accentColor: "#F0C57F",
     image: "/produto17.jpeg",
-  },
-  {
-    id: "espresso-royale",
-    name: "Expresso Royale",
-    description:
-      "Um cinto espresso ultra-profundo que sustenta qualquer produção, da alfaiataria impecável ao visual sofisticado de fim de semana.",
-    material: "Couro Curtido Vegetal",
-    details: [
-      "Tom marrom-escuro intenso",
-      "Acabamento com brilho sutil",
-      "Largura: 3,5 cm",
-      "Desenvolvido para amaciar com o tempo",
-    ],
-    gradient: "linear-gradient(135deg, #3A2317 0%, #23140E 50%, #0F0705 100%)",
-    accentColor: "#8B5A3C",
-    image: "/produto18.jpeg",
-  },
+  }
 ];
 
 export function getBeltById(id: string): Belt | undefined {
