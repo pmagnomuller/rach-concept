@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 import {
   COOKIE_CONSENT_KEY,
@@ -10,13 +10,13 @@ import {
 
 export default function CookieConsentBanner() {
   const { ui } = useLanguage();
-  const [isVisible, setIsVisible] = useState(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
     const saved = window.localStorage.getItem(COOKIE_CONSENT_KEY);
-    return !isCookieConsentStatus(saved);
-  });
+    setIsVisible(!isCookieConsentStatus(saved));
+  }, []);
 
   const setConsent = (status: CookieConsentStatus) => {
     window.localStorage.setItem(COOKIE_CONSENT_KEY, status);
