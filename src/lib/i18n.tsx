@@ -83,7 +83,7 @@ export const UI_TEXT: Record<Language, UiDictionary> = {
       "Para mais informações sobre o produto, inspiração de estilo e os lançamentos mais recentes, visite o nosso",
     beltBackToCollection: "Voltar para a coleção",
     quickView: "Ver detalhes",
-    footerTagline: "É só adicionar um cinto!",
+    footerTagline: "Just add a belt!",
     footerRights: "Todos os direitos reservados.",
     footerLegal: "Legal",
     footerContact: "Contacto",
@@ -154,18 +154,20 @@ type LanguageContextValue = {
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>(() => {
-    if (typeof window === "undefined") {
-      return "pt";
-    }
+  const [language, setLanguage] = useState<Language>("pt");
+
+  // Load saved language once after mount
+  useEffect(() => {
+    if (typeof window === "undefined") return;
     const saved = window.localStorage.getItem(STORAGE_KEY);
     if (saved === "pt" || saved === "en") {
-      return saved;
+      setLanguage(saved);
     }
-    return "pt";
-  });
+  }, []);
 
+  // Sync document language and localStorage whenever language changes
   useEffect(() => {
+    if (typeof window === "undefined") return;
     window.localStorage.setItem(STORAGE_KEY, language);
     document.documentElement.lang = language === "pt" ? "pt-PT" : "en";
   }, [language]);
