@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 
@@ -13,18 +12,6 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <nav className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link 
-            href="/" 
-            className="hover:opacity-70 transition-opacity"
-          >
-            <Image
-              src="/logo.svg"
-              alt="RachConcept"
-              width={140}
-              height={50}
-              className="h-8 w-auto"
-            />
-          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
