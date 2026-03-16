@@ -21,7 +21,7 @@ export const belts: Belt[] = [
     id: "heritage-trio",
     name: "Westrn",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Várias cores",
@@ -36,7 +36,7 @@ export const belts: Belt[] = [
     id: "amber-trail",
     name: "Cobra",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Várias cores",
@@ -51,7 +51,7 @@ export const belts: Belt[] = [
     id: "saddle-vintage",
     name: "Tartaruga",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Várias cores",
@@ -66,7 +66,7 @@ export const belts: Belt[] = [
     id: "noir-eclipse",
     name: "Eclipse",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Cor preta",
@@ -82,7 +82,7 @@ export const belts: Belt[] = [
     id: "terra-rustica",
     name: "Escaravelho",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Várias cores",
@@ -97,7 +97,7 @@ export const belts: Belt[] = [
     id: "desert-ember",
     name: "Alvie",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Castanho ou preto",
@@ -111,7 +111,7 @@ export const belts: Belt[] = [
     id: "mahogany-crest",
     name: "Lua Negra",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele preta",
       "Fivela em dourado velho",
@@ -125,7 +125,7 @@ export const belts: Belt[] = [
     id: "copper-sands",
     name: "Shell",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Cor azul ou castanho",
@@ -140,7 +140,7 @@ export const belts: Belt[] = [
     id: "midnight-halo",
     name: "Summer Turtle",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele cor castanha",
       "Fivela em madrepérola",
@@ -153,7 +153,7 @@ export const belts: Belt[] = [
     id: "brass-orbit",
     name: "Edie",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Fivela em zamac dourado ou prateado",
       "Strass em cor preta",
@@ -168,7 +168,7 @@ export const belts: Belt[] = [
     id: "onyx-ridge",
     name: "Wave",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Largura 2 cm ou 3,5 cm",
@@ -181,7 +181,7 @@ export const belts: Belt[] = [
     id: "sandstone-loop",
     name: "Chapa",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Várias cores",
@@ -196,7 +196,7 @@ export const belts: Belt[] = [
     id: "caramel-boulevard",
     name: "Circle",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Várias cores",
@@ -211,7 +211,7 @@ export const belts: Belt[] = [
     id: "chestnut-parade",
     name: "Capri",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Várias cores",
@@ -225,7 +225,7 @@ export const belts: Belt[] = [
     id: "burnt-sienna-line",
     name: "Básico",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele",
       "Várias cores",
@@ -239,7 +239,7 @@ export const belts: Belt[] = [
     id: "graphite-edge",
     name: "Oval",
     description: "",
-    material: "Pele",
+    material: "",
     details: [
       "Cinto em pele castanha, camel ou preta",
       "Fivela dourada",
@@ -253,7 +253,7 @@ export const belts: Belt[] = [
     id: "golden-dusk",
     name: "Entardecer Dourado",
     description: "",
-    material: "Couro Flor Integral",
+    material: "",
     details: [
       "Acabamento de superfície que capta a luz",
       "Fivela escultural curvada",
@@ -278,7 +278,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "heritage-trio": {
     name: "Heritage Trio",
     description: "",
-    material: "Full-Grain Leather",
+    material: "",
     details: [
       "Hand-polished antique gold buckle set",
       "Three-tone leather palette",
@@ -289,7 +289,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "amber-trail": {
     name: "Amber Trail",
     description: "",
-    material: "Vegetable-Tanned Leather",
+    material: "",
     details: [
       "Hand-burnished finish",
       "Brass-finished buckle and keeper",
@@ -300,7 +300,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "saddle-vintage": {
     name: "Saddle Vintage",
     description: "",
-    material: "Italian Full-Grain Leather",
+    material: "",
     details: [
       "Contrast topstitching",
       "Vintage brass buckle",
@@ -311,7 +311,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "noir-eclipse": {
     name: "Noir Eclipse",
     description: "",
-    material: "Premium Calfskin",
+    material: "",
     details: [
       "Matte black leather finish",
       "Sculpted gunmetal buckle",
@@ -322,7 +322,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "terra-rustica": {
     name: "Terra Rustica",
     description: "",
-    material: "Waxed Leather",
+    material: "",
     details: [
       "Lightly distressed texture",
       "Etched brass-tone buckle",
@@ -333,7 +333,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "desert-ember": {
     name: "Desert Ember",
     description: "",
-    material: "Top-Grain Leather",
+    material: "",
     details: [
       "Smooth waxed surface",
       "Brushed gold buckle",
@@ -344,7 +344,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "mahogany-crest": {
     name: "Mahogany Crest",
     description: "",
-    material: "Vegetable-Tanned Leather",
+    material: "",
     details: [
       "Rich, multi-tone color depth",
       "Signature engraved buckle",
@@ -355,7 +355,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "copper-sands": {
     name: "Copper Sands",
     description: "",
-    material: "Nubuck Leather",
+    material: "",
     details: [
       "Powdery, velvety surface",
       "Light antique brass buckle",
@@ -366,7 +366,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "midnight-halo": {
     name: "Midnight Halo",
     description: "",
-    material: "Smooth Calf Leather",
+    material: "",
     details: [
       "High-contrast metal hardware",
       "Sleek, untextured strap",
@@ -377,7 +377,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "brass-orbit": {
     name: "Brass Orbit",
     description: "",
-    material: "Full-Grain Leather",
+    material: "",
     details: [
       "Bold central buckle silhouette",
       "Structured strap keeps its shape",
@@ -388,7 +388,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "onyx-ridge": {
     name: "Onyx Ridge",
     description: "",
-    material: "Grain-Embossed Leather",
+    material: "",
     details: [
       "Pronounced grain pattern",
       "Dark nickel hardware",
@@ -399,7 +399,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "sandstone-loop": {
     name: "Sandstone Loop",
     description: "",
-    material: "Suede-Effect Leather",
+    material: "",
     details: [
       "Tonal edge stitching",
       "Rounded, polished buckle",
@@ -410,7 +410,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "caramel-boulevard": {
     name: "Caramel Boulevard",
     description: "",
-    material: "Top-Grain Leather",
+    material: "",
     details: [
       "Smooth, even color",
       "Classic rectangular buckle",
@@ -421,7 +421,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "chestnut-parade": {
     name: "Chestnut Parade",
     description: "",
-    material: "Vegetable-Tanned Leather",
+    material: "",
     details: [
       "Subtle two-tone shading",
       "Polished brass buckle",
@@ -432,7 +432,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "burnt-sienna-line": {
     name: "Burnt Sienna Line",
     description: "",
-    material: "Smooth Leather",
+    material: "",
     details: [
       "Minimal topstitching",
       "Angular metal buckle",
@@ -443,7 +443,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "graphite-edge": {
     name: "Graphite Edge",
     description: "",
-    material: "Calfskin Leather",
+    material: "",
     details: [
       "Semi-matte finish",
       "Cool silver-tone hardware",
@@ -454,7 +454,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "golden-dusk": {
     name: "Golden Dusk",
     description: "",
-    material: "Full-Grain Leather",
+    material: "",
     details: [
       "Light-catching surface finish",
       "Curved sculptural buckle",
@@ -465,7 +465,7 @@ const beltsEnglish: Record<string, LocalizedBeltContent> = {
   "espresso-royale": {
     name: "Espresso Royale",
     description: "",
-    material: "Vegetable-Tanned Leather",
+    material: "",
     details: [
       "Intense dark-brown tone",
       "Subtle sheen finish",
