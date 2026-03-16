@@ -56,7 +56,7 @@ export const UI_TEXT: Record<Language, UiDictionary> = {
     navTerms: "Termos",
     toggleMenu: "Alternar menu",
     heroEyebrow: "Looks do dia a dia, elevados",
-    heroTagline: "É só adicionar um cinto.",
+    heroTagline: "Just add a belt!",
     heroDescription:
       "Fivelas esculturais, couros sofisticados e peças pensadas para estar no centro do seu guarda-roupa — não apenas na cintura.",
     heroCta: "Ver coleção",
