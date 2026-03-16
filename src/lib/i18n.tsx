@@ -103,7 +103,7 @@ export const UI_TEXT: Record<Language, UiDictionary> = {
     navTerms: "Terms",
     toggleMenu: "Toggle menu",
     heroEyebrow: "Everyday looks, elevated",
-    heroTagline: "Just add a belt.",
+    heroTagline: "Just add a belt!",
     heroDescription:
       "Sculptural buckles, rich leathers, and pieces designed to sit at the heart of your wardrobe - not just at your waist.",
     heroCta: "View collection",
