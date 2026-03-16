@@ -9,6 +9,8 @@ const STORAGE_KEY = "rachconcept-language";
 type UiDictionary = {
   navHome: string;
   navCatalogue: string;
+  navPrivacy: string;
+  navTerms: string;
   toggleMenu: string;
   heroEyebrow: string;
   heroTagline: string;
@@ -35,12 +37,23 @@ type UiDictionary = {
   quickView: string;
   footerTagline: string;
   footerRights: string;
+  footerLegal: string;
+  footerContact: string;
+  footerBusinessInfo: string;
+  footerEmail: string;
+  footerInstagram: string;
+  cookieTitle: string;
+  cookieDescription: string;
+  cookieAccept: string;
+  cookieDecline: string;
 };
 
 export const UI_TEXT: Record<Language, UiDictionary> = {
   pt: {
     navHome: "Início",
     navCatalogue: "Catálogo",
+    navPrivacy: "Privacidade",
+    navTerms: "Termos",
     toggleMenu: "Alternar menu",
     heroEyebrow: "Looks do dia a dia, elevados",
     heroTagline: "É só adicionar um cinto.",
@@ -72,10 +85,22 @@ export const UI_TEXT: Record<Language, UiDictionary> = {
     quickView: "Ver detalhes",
     footerTagline: "É só adicionar um cinto!",
     footerRights: "Todos os direitos reservados.",
+    footerLegal: "Legal",
+    footerContact: "Contacto",
+    footerBusinessInfo: "RachConcept - Catálogo online de cintos artesanais.",
+    footerEmail: "Email",
+    footerInstagram: "Instagram",
+    cookieTitle: "Preferências de cookies",
+    cookieDescription:
+      "Utilizamos cookies essenciais para o funcionamento do site e, com a sua autorização, cookies analíticos para perceber como o catálogo é utilizado.",
+    cookieAccept: "Aceitar analíticos",
+    cookieDecline: "Apenas essenciais",
   },
   en: {
     navHome: "Home",
     navCatalogue: "Catalogue",
+    navPrivacy: "Privacy",
+    navTerms: "Terms",
     toggleMenu: "Toggle menu",
     heroEyebrow: "Everyday looks, elevated",
     heroTagline: "Just add a belt.",
@@ -107,6 +132,16 @@ export const UI_TEXT: Record<Language, UiDictionary> = {
     quickView: "View details",
     footerTagline: "Just add a belt!",
     footerRights: "All rights reserved.",
+    footerLegal: "Legal",
+    footerContact: "Contact",
+    footerBusinessInfo: "RachConcept - Online catalogue of handcrafted belts.",
+    footerEmail: "Email",
+    footerInstagram: "Instagram",
+    cookieTitle: "Cookie preferences",
+    cookieDescription:
+      "We use essential cookies so the site can run and, with your permission, analytics cookies to understand how visitors use the catalogue.",
+    cookieAccept: "Accept analytics",
+    cookieDecline: "Essential only",
   },
 };
 

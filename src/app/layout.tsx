@@ -3,6 +3,8 @@ import { Cormorant_Garamond, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Analytics from "@/components/Analytics";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
 import { LanguageProvider } from "@/lib/i18n";
 
 const cormorant = Cormorant_Garamond({
@@ -34,9 +36,11 @@ export default function RootLayout({
         className={`${cormorant.variable} ${raleway.variable} antialiased`}
       >
         <LanguageProvider>
+          <Analytics />
           <Header />
           <main>{children}</main>
           <Footer />
+          <CookieConsentBanner />
         </LanguageProvider>
       </body>
     </html>
