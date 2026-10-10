@@ -52,6 +52,12 @@ export default function Footer() {
             </h3>
             <div className="mt-3 flex flex-col gap-2 text-sm">
               <Link
+                href="/legal"
+                className="text-muted hover:text-foreground transition-colors"
+              >
+                {ui.navLegal}
+              </Link>
+              <Link
                 href="/privacy"
                 className="text-muted hover:text-foreground transition-colors"
               >

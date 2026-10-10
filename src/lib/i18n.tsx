@@ -11,6 +11,7 @@ type UiDictionary = {
   navCatalogue: string;
   navPrivacy: string;
   navTerms: string;
+  navLegal: string;
   toggleMenu: string;
   heroEyebrow: string;
   heroTagline: string;
@@ -54,6 +55,7 @@ export const UI_TEXT: Record<Language, UiDictionary> = {
     navCatalogue: "Catálogo",
     navPrivacy: "Privacidade",
     navTerms: "Termos",
+    navLegal: "Aviso Legal",
     toggleMenu: "Alternar menu",
     heroEyebrow: "",
     heroTagline: "Just add a belt!",
@@ -100,6 +102,7 @@ export const UI_TEXT: Record<Language, UiDictionary> = {
     navCatalogue: "Catalogue",
     navPrivacy: "Privacy",
     navTerms: "Terms",
+    navLegal: "Legal Notice",
     toggleMenu: "Toggle menu",
     heroEyebrow: "",
     heroTagline: "Just add a belt!",
